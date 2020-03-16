@@ -15,15 +15,15 @@ mongoose.connect("mongodb://localhost:27017/gestionstock", {
     useUnifiedTopology: true,
     useFindAndModify: false,
 })
-console.log("va...funciona")
 
+console.log("va...funciona")
 exports.register = (req, res) => {
         bodycontroller.checkBody(res, req.body, [
         "username",
         "password",
         "email"
     ]);
-    
+  
     user.find({$or:[{
             userName: req.body["username"]
         }, {
