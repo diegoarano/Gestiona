@@ -16,19 +16,21 @@ mongoose.connect("mongodb://localhost:27017/gestionstock", {
     useFindAndModify: false,
 })
 
-console.log("va...funciona")
+
 exports.register = (req, res) => {
-        bodycontroller.checkBody(res, req.body, [
+    bodycontroller.checkBody(res, req.body, [
         "username",
         "password",
         "email"
     ]);
-  
-    user.find({$or:[{
+    console.log("va...funciona")
+    user.find({
+        $or: [{
             userName: req.body["username"]
         }, {
             email: req.body["email"]
-        }]},
+        }]
+    },
         (error, result) => {
             if (error) throw error;
 
@@ -60,45 +62,47 @@ exports.register = (req, res) => {
 //LOGIN EXPORT
 exports.login = (req, res) => {
 
-    user.find({$or:[{
-        userName: req.body["username"]
-    }, {
-        email: req.body["email"]
-    }]},
+    user.find({
+        $or: [{
+            userName: req.body["username"]
+        }, {
+            email: req.body["email"]
+        }]
+    },
         (error, user) => {
             if (error) throw error;
-            if(user[0] === undefined){
-                res.send({ "error": "usuario o password incorrectos"})
-            }else{ 
+            if (user[0] === undefined) {
+                res.send({ "error": "usuario o password incorrectos" })
+            } else {
                 bcrypt.compare(
-                req.body.password,
-                user[0].password,
-                (error, coincidence) => {
-                    if (error) throw error;
-                    if (coincidence === true) {
-                        jwt.sign({
+                    req.body.password,
+                    user[0].password,
+                    (error, coincidence) => {
+                        if (error) throw error;
+                        if (coincidence === true) {
+                            jwt.sign({
                                 "username": user.userName
                             },
-                            secrets.jwt_clave,
-                            (error, token) => {
-                                if (error) throw error;
-                                res.cookie("noisses", token);
-                                res.send({
-                                    "succes": "Bienvenido",
-                                    "token": token
-                                })
-                            }
-                        )
-                    } else {
-                        res.send({
-                            "error": "usuario o password incorrectos"
-                        })
+                                secrets.jwt_clave,
+                                (error, token) => {
+                                    if (error) throw error;
+                                    res.cookie("noisses", token);
+                                    res.send({
+                                        "succes": "Bienvenido",
+                                        "token": token
+                                    })
+                                }
+                            )
+                        } else {
+                            res.send({
+                                "error": "usuario o password incorrectos"
+                            })
+                        }
                     }
-                }
-            )
-        }
+                )
+            }
 
-           
+
 
 
         }

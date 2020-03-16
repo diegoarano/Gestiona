@@ -15,7 +15,7 @@ server.use(cookieParser());
 
 
 //endpoint Regitro y Login
-server.post('/registrarususario', authcontroller.register);
+server.post('/registrarusuario', authcontroller.register);
 
 server.post('/login',authcontroller.login);
 
