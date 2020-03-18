@@ -1,0 +1,52 @@
+
+.global{
+    background-image: url("/assets/imagen1.jpg");
+    background-size: cover;
+    height: 650px;
+}
+
+
+.formulario{
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.formulario input[type="text"],.formulario input[type="password"] {
+    padding-left: 45px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+   
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+    color: rgb(255, 255, 255);
+}
+
+.icon{
+    position: relative;
+    left: 25px;
+}
+
+.button{
+    color: rgb(8, 8, 8);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: floralwhite;
+}
+
+.pie{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 160px;
+    font-weight: bolder;
+   
+}
