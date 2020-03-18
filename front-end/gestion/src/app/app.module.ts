@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
@@ -29,7 +33,9 @@ const RouterConfig: Routes =[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(RouterConfig, {useHash:true})
+   FormsModule,
+    RouterModule.forRoot(RouterConfig, {useHash:true}),
+    HttpClientModule
 
   ],
   providers: [DataService],

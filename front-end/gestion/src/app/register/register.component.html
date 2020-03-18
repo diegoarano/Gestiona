@@ -12,25 +12,26 @@
                     <div class="input">
 
                         <i class="fas fa-user icon"></i>
-                        <input type="text" placeholder="Nombre">
+                        <input name="username" [(ngModel)]="data.username" type="text" placeholder="Nombre"> 
 
                     </div>
 
                     <div class="input">
 
                         <i class="fas fa-envelope icon"></i>
-                        <input type="text" placeholder="Correo">
+                        <input name="email" [(ngModel)]="data.email"type="text" placeholder="Correo">
 
                     </div>
 
                     <div class="input">
 
                         <i class="fas fa-key icon"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input name="password" [(ngModel)]="data.password" type="password" placeholder="Contraseña">
 
                     </div>
 
-                    <input type="submit" value="Registrate" class="button">
+                    <input type ="button" value="Registrate" (click)="submit()" class="button">
+
                     <p>Ya tienes una cuenta? <a routerLink="/login">Iniciar Sesion</a></p>
                 </form>
             </div>

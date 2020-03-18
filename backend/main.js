@@ -8,9 +8,14 @@ const authcontroller = require('./controllers/auth.controller');
 
 const server = express();
 
+const cors = require("cors");
+
+
 //midelware
 server.use(bodyparse.json());
 server.use(cookieParser());
+
+server.use(cors());
 
 
 
