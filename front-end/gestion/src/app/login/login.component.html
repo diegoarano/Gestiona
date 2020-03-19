@@ -1,4 +1,3 @@
-
 <div class="global">
     <div class="container">
         <div class="row">
@@ -13,20 +12,20 @@
                     <div class="input">
 
                         <i class="fas fa-user icon"></i>
-                        <input type="text" placeholder="Nombre">
+                        <input name="username" [(ngModel)]="data.username" type="text" placeholder="Nombre">
 
                     </div>
 
-                   
 
                     <div class="input">
 
                         <i class="fas fa-key icon"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input name="password" [(ngModel)]="data.password" type="password" placeholder="Contraseña">
 
                     </div>
 
-                    <input type="submit" value="Entra" class="button">
+                    <input type="button" value="Entra" (click)="submit()" class="button">
+
                     <p>No tienes una cuenta? <a routerLink="/register">Registrate aqui</a></p>
                 </form>
             </div>
@@ -35,5 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="pie"><footer >  Sobre Nosotros |Derechos Reservados | Barcelona 2020  </footer></div>
+    <div class="pie">
+        <footer> Sobre Nosotros |Derechos Reservados | Barcelona 2020 </footer>
+    </div>
 </div>

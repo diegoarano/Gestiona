@@ -13,6 +13,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {DataService} from './services/data.service';
 import { PedirComponent } from './pedir/pedir.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
+import { UserService } from './services/user.service';
 
 const RouterConfig: Routes =[
   {"path":"register", "component": RegisterComponent},
@@ -38,7 +39,7 @@ const RouterConfig: Routes =[
     HttpClientModule
 
   ],
-  providers: [DataService],
+  providers: [DataService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

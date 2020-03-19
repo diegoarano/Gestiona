@@ -26,7 +26,7 @@ exports.register = (req, res) => {
     console.log("va...funciona")
     user.find({
         $or: [{
-            userName: req.body["username"]
+            username: req.body["username"]
         }, {
             email: req.body["email"]
         }]
@@ -41,9 +41,10 @@ exports.register = (req, res) => {
             } else {
                 bcrypt.hash(req.body["password"], 10, (error, hash) => {
                     if (error) throw error;
+                    console.log(req.body)
                     const data = {
                         "_id": mongoose.Types.ObjectId(),
-                        "username": req.body.userName,
+                        "username": req.body.username,
                         "password": hash,
                         "email": req.body.email
                     }
@@ -64,10 +65,8 @@ exports.login = (req, res) => {
 
     user.find({
         $or: [{
-            userName: req.body["username"]
-        }, {
-            email: req.body["email"]
-        }]
+            username: req.body["username"]
+        } ]
     },
         (error, user) => {
             if (error) throw error;
@@ -81,7 +80,7 @@ exports.login = (req, res) => {
                         if (error) throw error;
                         if (coincidence === true) {
                             jwt.sign({
-                                "username": user.userName
+                                "username": user.username
                             },
                                 secrets.jwt_clave,
                                 (error, token) => {

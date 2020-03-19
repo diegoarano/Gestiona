@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Subscriber } from 'rxjs';
+import { Route } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -9,7 +11,7 @@ import { Subscriber } from 'rxjs';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(public _http: HttpClient) { }
+  constructor(public _http: HttpClient, public _router:Router) { }
 
   data={"username": "",
         "email": "",
@@ -20,7 +22,7 @@ export class RegisterComponent implements OnInit {
   submit(){
     this._http.post("http://localhost:3000/registrarusuario", this.data)
     .subscribe((response)=>{
-      console.log(response)
+      this._router.navigateByUrl("/login")
     })
   }
 

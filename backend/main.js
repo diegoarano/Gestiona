@@ -5,6 +5,8 @@ const usuarioscontroller = require ('./controllers/usuarios.controller');
 const stockcontroller = require ('./controllers/stock.controller');
 const pedidocontroller = require ('./controllers/pedido.controller');
 const authcontroller = require('./controllers/auth.controller');
+const proveedorescontroller = require('./controllers/proveedores.controller');
+
 
 const server = express();
 
@@ -56,6 +58,20 @@ server.post('/hacerpedido', pedidocontroller.hacerpedido);
 server.get('/verpedidos', pedidocontroller.verpedidos);
 
 server.get('/pedido/:id', pedidocontroller.pedidoid);
+
+
+
+//endopoints proveedores
+
+server.post('/agregarproveedor', proveedorescontroller.agregarproveedor);
+
+server.get('/allproveedores', proveedorescontroller.allproveedores);
+
+
+
+
+
+
 
 
 
