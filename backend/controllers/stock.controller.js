@@ -12,7 +12,7 @@ exports.agregarproducto = (req, res)=>{
         "categoria":req.body.categoria,
         "nombre": req.body.nombre,
         "cantminima": req.body.cantminima,
-        "cantmaxima": req.body.cantmaxima
+        "cantactual": req.body.cantactual
        
     }
     const nuevoproducto = new stock(data);
@@ -51,7 +51,7 @@ exports.modificoproducto = (req, res)=>{
         "categoria":req.body.categoria,
         "nombre": req.body.nombre,
         "cantminima": req.body.cantminima,
-        "cantmaxima": req.body.cantmaxima
+        "cantactual": req.body.cantactual
      
     }
     

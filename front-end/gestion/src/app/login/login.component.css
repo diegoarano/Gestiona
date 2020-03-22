@@ -2,7 +2,7 @@
 .global{
     background-image: url("/assets/imagen1.jpg");
     background-size: cover;
-    height: 650px;
+    height: 100%;
 }
 
 
@@ -46,7 +46,7 @@ p{
 .pie{
     text-align: center;
     color: rgb(0, 0, 0);
-    margin-top: 160px;
+    margin-top: 190px;
     font-weight: bolder;
    
 }

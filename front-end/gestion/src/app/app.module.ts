@@ -14,12 +14,14 @@ import {DataService} from './services/data.service';
 import { PedirComponent } from './pedir/pedir.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
 import { UserService } from './services/user.service';
+import { ProveedoresComponent } from './proveedores/proveedores.component';
 
 const RouterConfig: Routes =[
   {"path":"register", "component": RegisterComponent},
   {"path": "login", "component": LoginComponent},
   {"path":"pedir", "component":PedirComponent},
-  {"path":"pedido", "component":PedidosComponent},
+  {"path":"pedidos", "component":PedidosComponent},
+  {"path":"proveedores", "component":ProveedoresComponent},
 
 ]
 
@@ -30,7 +32,8 @@ const RouterConfig: Routes =[
     RegisterComponent,
     LoginComponent,
     PedirComponent,
-    PedidosComponent
+    PedidosComponent,
+    ProveedoresComponent
   ],
   imports: [
     BrowserModule,

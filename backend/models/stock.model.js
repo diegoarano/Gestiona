@@ -6,7 +6,10 @@ const Schema = new mongoose.Schema({
     "_id": {
         require: true,
         type: types.ObjectId
+
     },
+  
+
     "categoria": {
         require: true,
         type: types.String
@@ -19,7 +22,7 @@ const Schema = new mongoose.Schema({
         require: true,
         type: types.Number
     },
-    "cantmaxima": {
+    "cantactual": {
         require: true,
         type: types.Number
     },

@@ -1,1 +1,86 @@
-<p>pedir works!</p>
+
+<div class="global">
+   
+ 
+        
+    <div class="container">
+
+     
+      <h1>Realizar Pedidos</h1>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+
+            <div>  
+              <button type="button" routerLink="/pedidos" class="btn btn-secondary boton">Listado de Pedidos</button> <br>
+              <button type="button" routerLink="/proveedores" class="btn btn-secondary boton">Proveedores</button><br>
+              <button type="button" routerLink="/login" class="btn btn-secondary boton">Volver a Inicio</button>
+              </div>
+
+            
+      
+            
+          </div>
+          <div class="  col-md-6 col-sm-8 col-xs-12">
+            <form>
+                <div class="form-group ">
+                  <label >Empleado</label>
+                  <input type="text" class="form-control"  placeholder="Nombre de Empleado">
+                </div>
+                <div class="form-group">
+                    <label >Proveedor</label>
+                    <input type="text" class="form-control"  placeholder="Nombre del Proveedor">
+                  </div>
+
+                  <div class="form-group">
+                    <label >Fecha de Pedido</label>
+                    <input type="date" class="form-control"  placeholder="Fecha de pedido">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Categorias</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option></option>
+                      <option>Carnes</option>
+                      <option>Verduras</option>
+                      <option>Congelados</option>
+                      <option>Conservas</option>
+                      <option>Frescos</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Producto</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option></option>
+                      <option>Carnes</option>
+                      <option>Verduras</option>
+                      <option>Congelados</option>
+                      <option>Conservas</option>
+                      <option>Frescos</option>
+                    </select>
+                  </div>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Concepto</label>
+                  <textarea class="form-control"  rows="3"></textarea>
+                </div>
+              </form>
+
+              <input type="button" value="Confirmar Pedido" (click)="submit()" class="button">
+
+            
+           
+          </div>
+          <div class="col-md-3">
+          
+          </div>
+        </div>
+      </div>
+      <div class="pie">
+        <footer> Sobre Nosotros |Derechos Reservados | Barcelona 2020 </footer>
+    </div>
+    </div>
+   
+
+

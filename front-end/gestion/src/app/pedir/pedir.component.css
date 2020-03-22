@@ -1,0 +1,42 @@
+
+h1{
+    text-align: center;
+    padding-top: 80px;
+    color: honeydew;
+ 
+}
+
+.row{
+    margin-top: 50px;
+}
+
+.global{
+    background-image: url("/assets/imagen1.jpg");
+    background-size: cover;
+    height: 100%;
+   
+}
+
+.boton{
+    width: 200px;
+    display:block;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 150px;
+   padding: 20px, 20px, 20px, 20px;
+ 
+}
+
+
+
+label{
+    color: honeydew;
+}
+
+.pie{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 80px;
+    font-weight: bolder;
+   
+}
