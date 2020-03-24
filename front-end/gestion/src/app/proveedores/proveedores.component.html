@@ -10,17 +10,21 @@
   
         
         <div>  
+          
           <button type="button" routerLink="/pedir" class="btn btn-secondary boton1">Hacer Pedido</button> <br>
           <button type="button" routerLink="/pedidos" class="btn btn-secondary boton2">Listado de Pedidos</button><br>
-          <button type="button" routerLink="/login" class="btn btn-secondary boton2">Volver a Inicio</button>
+          <button type="button" routerLink="/login" class="btn btn-secondary boton2">Volver a Inicio</button><br>
+          <button type="button" routerLink="/agregaproveedor" class="btn btn-secondary boton2">Agregar Proveedor</button>
+          
           </div>
      
       </div>
       <div class="col-md-6 col-sm-8 col-xs-12">
   
         <h1>Proveedores</h1>
-        <ul class="list-group lista">
-          <li class="list-group-item disabled" aria-disabled="true">Proveedor</li>
+
+        <ul *ngFor="let proveedor of _data.proveedores; let i= index" class="list-group lista">
+          <li class="list-group-item disabled" aria-disabled="true">Proveedor:{{proveedor.nombre}}</li>
           <li class="list-group-item celda"></li>
           <li class="list-group-item celda"></li>
           <li class="list-group-item celda"></li>

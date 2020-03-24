@@ -16,21 +16,25 @@ const Schema = new mongoose.Schema({
         require: true,
         type: types.String
     },
+    "concepto": {
+        require: true,
+        type: types.String
+    },
 
     "fecha": {
         require: true,
         type: types.Date
     },
-   "productos":{
-    require:true,
-      type: [{
-        require: true,
-        type: types.String,
-        enum: ["carnes", "verduras"]
-    }],
-
-
-  }
+    "productos":{
+        require:true,
+          type: [{
+            require: true,
+            type: types.String,
+            enum: ["Carnes", "Verduras","Congelados","Conservas","Frescos"]
+        }],
+    
+    
+      }
    
 
 })

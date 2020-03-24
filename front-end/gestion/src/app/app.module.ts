@@ -15,6 +15,7 @@ import { PedirComponent } from './pedir/pedir.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
 import { UserService } from './services/user.service';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
+import { AgregaproveedorComponent } from './agregaproveedor/agregaproveedor.component';
 
 const RouterConfig: Routes =[
   {"path":"register", "component": RegisterComponent},
@@ -22,6 +23,7 @@ const RouterConfig: Routes =[
   {"path":"pedir", "component":PedirComponent},
   {"path":"pedidos", "component":PedidosComponent},
   {"path":"proveedores", "component":ProveedoresComponent},
+  {"path":"agregaproveedor", "component":AgregaproveedorComponent},
 
 ]
 
@@ -33,7 +35,8 @@ const RouterConfig: Routes =[
     LoginComponent,
     PedirComponent,
     PedidosComponent,
-    ProveedoresComponent
+    ProveedoresComponent,
+    AgregaproveedorComponent
   ],
   imports: [
     BrowserModule,

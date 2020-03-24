@@ -10,8 +10,10 @@ exports.agregarproveedor = (req, res)=>{
     const data ={
         "_id": mongoose.Types.ObjectId(),
         "nombre": req.body.nombre,
+        "direccion": req.body.direccion,
         "nif": req.body.nif,
-        "concepto": req.body.concepto
+        "contacto": req.body.contacto,
+        "categoria": req.body.categoria
        
     }
     const nuevoproveedor = new proveedores(data);

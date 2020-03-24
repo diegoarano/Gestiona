@@ -13,6 +13,7 @@
       <div>  
         <button type="button" routerLink="/pedir" class="btn btn-secondary boton1">Hacer Pedido</button> <br>
         <button type="button" routerLink="/proveedores" class="btn btn-secondary boton2">Proveedores</button><br>
+        <button type="button" routerLink="/agregaproveedor" class="btn btn-secondary boton2">Agregar Proveedor</button><br>
         <button type="button" routerLink="/login" class="btn btn-secondary boton2">Volver a Inicio</button>
         </div>
    
@@ -20,12 +21,13 @@
     <div class="col-md-6 col-sm-8 col-xs-12">
 
       <h1>Listado de Pedidos</h1>
-      <ul class="list-group lista">
-        <li class="list-group-item disabled" aria-disabled="true">Pedido</li>
-        <li class="list-group-item celda"></li>
-        <li class="list-group-item celda"></li>
-        <li class="list-group-item celda"></li>
-        <li class="list-group-item celda"></li>
+      <ul *ngFor="let pedido of _data.pedidos; let i= index"  class="list-group lista">
+        <li class="list-group-item disabled" aria-disabled="true"> Empleado : {{pedido.empleado}}</li>
+        <li class="list-group-item celda" > Proveedor : {{pedido.proveedor}}</li>
+        <li class="list-group-item celda"> Fecha :{{pedido.fecha}}</li>
+        <li class="list-group-item celda"> Producto :{{pedido.productos}}</li>
+        <li class="list-group-item celda"> Concepto :{{pedido.concepto}}</li>
+       
       </ul>
      
     </div>

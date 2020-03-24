@@ -1,0 +1,70 @@
+<div class="global">
+
+
+
+    <div class="container">
+
+
+        <h1>Agregar Proveedor</h1>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+
+                <div>
+                    <button type="button" routerLink="/pedidos" class="btn btn-secondary boton">Listado de
+                        Pedidos</button> <br>
+                    <button type="button" routerLink="/pedir" class="btn btn-secondary boton">Realizar
+                        Pedido</button><br>
+                    <button type="button" routerLink="/login" class="btn btn-secondary boton">Volver a Inicio</button>
+                </div>
+
+
+
+
+            </div>
+            <div class="  col-md-6 col-sm-8 col-xs-12">
+                <form>
+                    <div class="form-group ">
+                        <label>Nombre</label>
+                        <input name="nombre" [(ngModel)]="data.nombre" type="text" class="form-control"
+                            placeholder="Nombre de la Empresa">
+                    </div>
+
+                    <div class="form-group ">
+                        <label>Direccion</label>
+                        <input name="direccion" [(ngModel)]="data.direccion" type="text" class="form-control"
+                            placeholder="Direccion de la Empresa">
+                    </div>
+                    <div class="form-group">
+                        <label>Nif</label>
+                        <input name="nif" [(ngModel)]="data.nif" type="text" class="form-control"
+                            placeholder="Nif de la Empresa">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contacto</label>
+                        <input name="contacto" [(ngModel)]="data.contacto" type="text" class="form-control"
+                            placeholder="Numero de Telefono">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <input name="categoria" [(ngModel)]="data.categoria" type="text" class="form-control"
+                            placeholder="Concepto">
+                    </div>
+
+
+
+                    <input type="button" value="Confirmar Proveedor" (click)="submit()" class="button">
+                </form>
+
+            </div>
+            <div class="col-md-3">
+
+            </div>
+        </div>
+    </div>
+    <div class="pie">
+        <footer> Sobre Nosotros |Derechos Reservados | Barcelona 2020 </footer>
+    </div>
+</div>

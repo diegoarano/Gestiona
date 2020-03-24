@@ -11,11 +11,21 @@ const Schema = new mongoose.Schema({
         require: true,
         type: types.String
     },
+
+    "direccion": {
+        require: true,
+        type: types.String
+    },
     "nif": {
         require: true,
         type: types.Number
     },
-    "concepto": {
+
+    "contacto": {
+        require: true,
+        type: types.Number
+    },
+    "categoria": {
         require: true,
         type: types.String
     },

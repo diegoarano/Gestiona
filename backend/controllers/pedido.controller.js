@@ -10,10 +10,10 @@ exports.hacerpedido = (req, res)=>{
         "_id": mongoose.Types.ObjectId(),
         "empleado":req.body.empleado,
         "proveedor": req.body.proveedor,
+        "concepto": req.body.concepto,
         "fecha": req.body.fecha,
         "productos": req.body.productos
-        
-       
+                      
     }
     const nuevopedido = new pedido(data);
     nuevopedido.save((error)=>{
