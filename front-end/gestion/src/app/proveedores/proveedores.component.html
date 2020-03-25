@@ -24,11 +24,11 @@
         <h1>Proveedores</h1>
 
         <ul *ngFor="let proveedor of _data.proveedores; let i= index" class="list-group lista">
-          <li class="list-group-item disabled" aria-disabled="true">Proveedor:{{proveedor.nombre}}</li>
-          <li class="list-group-item celda"></li>
-          <li class="list-group-item celda"></li>
-          <li class="list-group-item celda"></li>
-          <li class="list-group-item celda"></li>
+          <li  class="list-group-item disabled" aria-disabled="true">Nombre : {{proveedor.nombre}}</li>
+          <li class="list-group-item celda" >Direccion : {{proveedor.direccion}}</li>
+          <li class="list-group-item celda">Nif : {{proveedor.nif}}</li>
+          <li class="list-group-item celda">Contacto : {{proveedor.contacto}}</li>
+          <li class="list-group-item celda">Categoria : {{proveedor.categoria}}</li>
         </ul>
        
       </div>

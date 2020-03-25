@@ -14,7 +14,7 @@ export class ProveedoresComponent implements OnInit {
 
   constructor(public _route: ActivatedRoute, public _http: HttpClient, public _data: DataService, public _router: Router) {
     console.log("hola1")
-    _data.getProveedores
+    _data.getProveedores()
   }
 
   ngOnInit(): void {
