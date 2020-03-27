@@ -20,6 +20,7 @@ import { AgregaproveedorComponent } from './agregaproveedor/agregaproveedor.comp
 const RouterConfig: Routes =[
   {"path":"register", "component": RegisterComponent},
   {"path": "login", "component": LoginComponent},
+  {"path": "", "component": LoginComponent},
   {"path":"pedir", "component":PedirComponent},
   {"path":"pedidos", "component":PedidosComponent},
   {"path":"proveedores", "component":ProveedoresComponent},

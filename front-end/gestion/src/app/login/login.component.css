@@ -1,32 +1,38 @@
 
 .global{
-    background-image: url("/assets/imagen2.jpg");
+    background-image: url("/assets/imagen1.jpg");
     background-size: cover;
-    height: 100%;
+    height: 700px;
 }
-
 
 .formulario{
     text-align: center;
     margin-top: 40px;
-
 }
 
 .formulario input[type="text"],.formulario input[type="password"] {
     padding-left: 45px;
     padding-top: 8px;
     padding-bottom: 8px;
+    border: solid 1px rgb(116, 116, 116);
    
 }
-
-
 
 h1{
     text-align: center;
     font-size: 40px;
-    margin-top: 150px;
+    margin-top: 120px;
     color: rgb(255, 255, 255);
+    font-style:italic;
 }
+
+h2{
+    text-align: center;
+    font-size: 50px;
+   font-style:italic;
+    color: rgb(255, 255, 255); 
+}
+
 
 .icon{
     position: relative;
@@ -37,16 +43,25 @@ h1{
     color: rgb(8, 8, 8);
     margin-top: 5px;
     margin-bottom: 10px;
+    background-color: rgba(37, 66, 73, 0.842);
+    border: solid 0.5px black;
+    color:  floralwhite;
+    width: 120px;
 }
 
 p{
-    color: floralwhite;
+    color:  floralwhite;
+    font-weight: bolder;
 }
 
 .pie{
     text-align: center;
     color: rgb(0, 0, 0);
-    margin-top: 190px;
+    margin-top: 200px;
     font-weight: bolder;
    
+}
+.tabla{
+    background-color: rgba(253, 253, 253, 0.767);
+    border: none;
 }

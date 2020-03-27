@@ -6,6 +6,24 @@ h1{
  
 }
 
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-style:italic;
+    color: rgb(255, 255, 255); 
+}
+
+.boton2{
+   width: 120px;
+  
+   color: rgb(255, 255, 255);
+   padding: 20px, 20px, 20px, 20px;
+   background-color: rgba(12, 51, 61, 0.616);
+   border: solid 1px black;
+ 
+}
+
+
 .row{
     margin-top: 50px;
 }
@@ -24,8 +42,20 @@ h1{
     margin-left: 0px;
     margin-right: 150px;
    padding: 20px, 20px, 20px, 20px;
+   background-color: rgba(12, 51, 61, 0.616);
+   border: solid 1px black;
  
 }
+
+.button{
+    background-color: rgba(12, 51, 61, 0.932);
+    border: none ;
+    border-radius: 5%;
+    border: solid 1px black;
+    color: lavenderblush;
+    
+}
+
 
 
 
@@ -39,4 +69,8 @@ label{
     margin-top: 80px;
     font-weight: bolder;
    
+}
+.tabla{
+    background-color: rgba(255, 255, 255, 0.795);
+    border: none;
 }

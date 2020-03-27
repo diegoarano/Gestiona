@@ -15,6 +15,23 @@
        margin-top: 80px;
        color: rgb(255, 255, 255);
    }
+
+   h2{
+    text-align: center;
+    font-size: 50px;
+   font-style:italic;
+    color: rgb(255, 255, 255); 
+}
+
+   .boton{
+    width: 120px;
+    display:block;
+    color: rgb(255, 255, 255);
+   padding: 20px, 20px, 20px, 20px;
+   background-color: rgba(12, 51, 61, 0.616);
+   border: solid 1px black;
+ 
+}
    
    .boton1{
        width: 200px;
@@ -23,6 +40,8 @@
        margin-left: 0px;
        margin-right: 150px;
       padding: 20px, 20px, 20px, 20px;
+      background-color: rgba(12, 51, 61, 0.616);
+      border: solid 1px black;
     
    }
    
@@ -33,6 +52,8 @@
        margin-left: 0px;
        margin-right: 150px;
       padding: 20px, 20px, 20px, 20px;
+      background-color: rgba(12, 51, 61, 0.616);
+      border: solid 1px black;
     
    }
 
@@ -48,5 +69,11 @@
    .celda{
        height:45px ;
    }
+   .tabla{
+    background-color: rgba(255, 255, 255, 0.795);
+    border: none;
+    
+}
+
    
    

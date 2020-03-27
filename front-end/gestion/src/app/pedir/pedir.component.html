@@ -1,6 +1,12 @@
 
 <div class="global">
-   
+  <nav class="navbar navbar-light ">
+    <a class="navbar-brand"> <h2>Stampi Cafe</h2> </a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn boton2" type="submit">Buscar</button>
+    </form>
+  </nav>
  
         
     <div class="container">
@@ -25,22 +31,22 @@
             <form>
                 <div class="form-group ">
                   <label >Empleado</label>
-                  <input name="empleado" [(ngModel)]="data.empleado" type="text" class="form-control"  placeholder="Nombre de Empleado">
+                  <input name="empleado" [(ngModel)]="data.empleado" type="text" class="form-control tabla"  placeholder="Nombre de Empleado">
                 </div>
                 <div class="form-group">
                     <label >Proveedor</label>
-                    <input name="proveedor" [(ngModel)]="data.proveedor"type="text" class="form-control"  placeholder="Nombre del Proveedor">
+                    <input name="proveedor" [(ngModel)]="data.proveedor"type="text" class="form-control tabla"  placeholder="Nombre del Proveedor">
                   </div>
 
                   <div class="form-group">
                     <label >Fecha de Pedido</label>
-                    <input name="fecha" [(ngModel)]="data.fecha" type="date" class="form-control"  placeholder="Fecha de pedido">
+                    <input name="fecha" [(ngModel)]="data.fecha" type="date" class="form-control tabla"  placeholder="Fecha de pedido">
                   </div>
 
                  
                   <div class="form-group">
                     <label for="exampleFormControlSelect1">Producto</label>
-                    <select name="productos" [(ngModel)]="data.productos" class="form-control" id="exampleFormControlSelect1">
+                    <select name="productos" [(ngModel)]="data.productos" class="form-control tabla" id="exampleFormControlSelect1">
                       <option></option>
                       <option>Carnes</option>
                       <option>Verduras</option>
@@ -52,7 +58,7 @@
                 
                 <div class="form-group">
                   <label  for="exampleFormControlTextarea1">Concepto</label>
-                  <textarea name="concepto" [(ngModel)]="data.concepto" class="form-control"  rows="3"></textarea>
+                  <textarea name="concepto" [(ngModel)]="data.concepto" class="form-control tabla"  rows="3"></textarea>
                 </div>
               </form>
 
@@ -66,7 +72,12 @@
         </div>
       </div>
       <div class="pie">
-        <footer> Sobre Nosotros |Derechos Reservados | Barcelona 2020 </footer>
+        <footer> Sobre Nosotros |Derechos Reservados | Barcelona 2020 |
+
+          <i class="fab fa-twitter"></i> |
+          <i class="fab fa-google-plus-g"></i> |
+          <i class="fab fa-whatsapp"></i> 
+        </footer>
     </div>
     </div>
    

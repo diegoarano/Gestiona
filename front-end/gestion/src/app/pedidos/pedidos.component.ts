@@ -17,6 +17,16 @@ export class PedidosComponent implements OnInit {
     _data.getPedidos()
   }
 
+  formataFecha(fecha: string) {
+
+    let convertedDate = new Date(fecha.toLocaleString());
+
+    let datestring = convertedDate.getDate() + "/" + (convertedDate.getMonth() + 1) + "/" + convertedDate.getFullYear();
+    
+
+
+    return datestring;
+  }
 
 
 
