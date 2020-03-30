@@ -1,3 +1,4 @@
+
 # Nombre del Proyecto
 > GESTION DE STOCK
 ​
@@ -5,21 +6,21 @@
 ​
 ## Informacion General
 Luego de mi amplia experiencia en gestion de locales de restauracion, he notado que por lo general el sector no se ha actualizado a las nuevas tecnologias, y se sigue trabajando con el metodo "papel y boligrafro"
-El proposito  de la app "GESTION DE STOCK es que se lleve un orden de cada empleado que realice un pedido y que estos queden reflejados y asociados a su Id y Proveedor correspondiente
+El proposito  de la app "GESTION DE STOCK es que se lleve un orden  de que empleado realiza un pedido y que estos queden reflejados y asociados a su Id y Proveedor correspondiente
 ​
 
 ​
 ## Tecnoligias 
  
-* Angular 9 - Html 5 - CSS 3
+* MongoDB - NodeJS & Express
 ​
 ## Caracteristicas
-* Pagina de Registro.
-* Pagina de Usuario Registrado.
-* Vista para Hacer Pedidos.
-* Vista para mostrar Listado de Pedidos.
-* Vista para Agregar un Proveedor.
-* Vista para mostrar los diferentes Proveedores.
+* Post para hacer Pedidos
+* Get para ver el Listado de Pedidos
+* Post para agregar un nuevo Proveedor
+* Get para ver todos los Proveedores
+
+
 ​
 ## Autor
 Creado por [diegoaranobcn@gmail.com](https://www.linkedin.com/in/diego-arano-cabrera-864126bb/) 

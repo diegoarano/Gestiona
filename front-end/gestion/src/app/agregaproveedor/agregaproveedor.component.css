@@ -49,8 +49,9 @@ h2{
 
 .button{
     background-color: rgba(12, 51, 61, 0.932);
-    border: none ;
     border-radius: 5%;
+    border: solid 1px black;
+    color: lavenderblush;
     
 }
 
