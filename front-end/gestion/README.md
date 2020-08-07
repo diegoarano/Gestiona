@@ -4,7 +4,7 @@
 
 ​
 ## Informacion General
-Luego de mi amplia experiencia en gestion de locales de restauracion, he notado que por lo general el sector no se ha actualizado a las nuevas tecnologias, y se sigue trabajando con el metodo "papel y boligrafro"
+Luego de mi amplia experiencia en gestion de locales de restauracion, he notado que por lo general el sector no se ha actualizado a las nuevas tecnologias, y se sigue trabajando con metodos anticuados 
 El proposito  de la app "GESTION DE STOCK es que se lleve un orden de cada empleado que realice un pedido y que estos queden reflejados y asociados a su Id y Proveedor correspondiente
 ​
 

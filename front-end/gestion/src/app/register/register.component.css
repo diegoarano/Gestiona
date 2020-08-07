@@ -1,66 +1,75 @@
-
-.global{
-    background-image: url("/assets/imagen1.jpg");
+.global {
+    background: #283c86;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #45a247, #283c86);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #45a247, #283c86);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
-    height:700px;
+    height: 700px;
 }
 
-.formulario{
+.formulario {
     text-align: center;
     margin-top: 40px;
 }
 
-.formulario input[type="text"],.formulario input[type="password"] {
+.formulario input[type="text"],
+.formulario input[type="password"] {
     padding-left: 45px;
     padding-top: 8px;
     padding-bottom: 8px;
     border: solid 1px rgb(116, 116, 116);
-   
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 40px;
     margin-top: 120px;
     color: rgb(255, 255, 255);
-    font-style:italic;
+    font-style: italic;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 50px;
-    font-style:italic;
-    color: rgb(255, 255, 255); 
+    font-style: italic;
+    color: rgb(255, 255, 255);
 }
 
-.icon{
+.icon {
     position: relative;
     left: 25px;
 }
 
-.button{
-    color: rgb(0, 0, 0);
+.button {
+    /* color: rgb(0, 0, 0);*/
     margin-top: 5px;
     margin-bottom: 10px;
-    background-color: rgba(12, 51, 61, 0.616);
-    border: solid 1px black;
-    color:  floralwhite;
+    /* background-color: rgba(12, 51, 61, 0.616);*/
+    background: #43C6AC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #191654, #43C6AC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* border: solid 1px black;*/
+    color: floralwhite;
 }
 
-p{
+p {
     color: floralwhite;
     font-weight: bolder;
 }
 
-.pie{
+.pie {
     text-align: center;
     color: rgb(0, 0, 0);
     margin-top: 150px;
     font-weight: bolder;
-      
 }
 
-.tabla{
+.tabla {
     background-color: rgba(253, 253, 253, 0.767);
     border: none;
 }
