@@ -43,17 +43,13 @@ h2 {
 }
 
 .button {
-    /* color: rgb(0, 0, 0);*/
+    /* width: 210px; */
+    color: rgb(0, 0, 0);
+    padding-left: 25px;
+    padding-right: 25px;
     margin-top: 5px;
     margin-bottom: 10px;
-    /* background-color: rgba(12, 51, 61, 0.616);*/
-    background: #43C6AC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #191654, #43C6AC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #191654, #43C6AC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* border: solid 1px black;*/
+    background-color: rgba(37, 66, 73, 0.842);
     color: floralwhite;
 }
 
@@ -71,5 +67,10 @@ p {
 
 .tabla {
     background-color: rgba(253, 253, 253, 0.767);
-    border: none;
+    width: 250px;
+    position: center;
+}
+
+.colorLink {
+    color: rgba(21, 34, 37, 0.842);
 }

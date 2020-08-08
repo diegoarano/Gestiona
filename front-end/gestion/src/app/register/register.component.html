@@ -17,7 +17,7 @@
 
                     <div class="input">
 
-                        <i class="fas fa-user icon"></i>
+                        <i class="fas fa-user-circle icon"></i>
                         <input name="username" [(ngModel)]="data.username" type="text" class="tabla" placeholder="Nombre">
 
                     </div>
@@ -34,11 +34,12 @@
                         <i class="fas fa-key icon"></i>
                         <input name="password" [(ngModel)]="data.password" type="password" class="tabla" placeholder="Contraseña">
 
+
                     </div>
 
-                    <input type="button" value="Registrate" (click)="submit()" class="button">
+                    <input type="button" value="Regístrate" (click)="submit()" class="button">
 
-                    <p>Ya tienes una cuenta? <a routerLink="/login">Iniciar Sesion</a></p>
+                    <p>Ya tienes una cuenta? <a routerLink="/login" class="colorLink">Iniciar Sesion</a></p>
                 </form>
             </div>
             <div class="col-sm-3">

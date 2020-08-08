@@ -47,10 +47,11 @@ h2 {
     color: rgb(8, 8, 8);
     margin-top: 5px;
     margin-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
     background-color: rgba(37, 66, 73, 0.842);
-    border: solid 0.5px black;
     color: floralwhite;
-    width: 120px;
+    /* width: 210px; */
 }
 
 p {
@@ -67,5 +68,10 @@ p {
 
 .tabla {
     background-color: rgba(253, 253, 253, 0.767);
-    border: none;
+    width: 250px;
+    position: center;
+}
+
+.diego {
+    color: rgba(21, 34, 37, 0.842);
 }
